@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefae0;
+}
+
+.game{
+  text-align: center;
+  background-color: #faedcd;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.card-grid{
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(4,125px);
+}
+
+.card{
+  width: 125px;
+  height: 125px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease; /* Efecto de transición al dar click */
+}
+
+.card.flipped{ /* Cambia de color al dar click sobre la targeta */
+  background: #1b4965;
+  color: white;
+  cursor:default;
+}
+
+h1{
+  font-size: 45px;
+  margin: 0;
+}
+.ctrl-group{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px
+}
+
+.lib{
+  font-size: 17px;
+  padding: 7px;
+  color: white;
+  background-color: #669bbc;
+  border-radius: 5px;
+}
+
+.btn{
+  font-size: 17px;
+  padding: 7px;
+  color: white;
+  background-color: #1b4965;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blr{
+  
+  filter: drop-shadow(0 0 2px white);
+}
